@@ -1,0 +1,23 @@
+//User function template for C++
+
+class Solution{
+public:
+    //Function to find the days of buying and selling stock for max profit.
+    vector<vector<int> > stockBuySell(vector<int> A, int n){
+      // code here
+
+        vector<vector<int>> ans;
+
+        for(int i=0;i<n-1;i++){
+
+// we simply check the value at i and i+1, if the value at i+1 is greater than value at i, then buy at i and sell at i+1
+
+            if(A[i+1]-A[i] > 0){
+
+                ans.push_back({i,i+1});
+}}
+return ans;
+// ans array storing buy and sell  ans.push_back({buy, sell})
+
+}
+};
